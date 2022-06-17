@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./box/style.css">
+    <title> Samsung </title>
+</head>
+
+<body>
+    <!--section one-->
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="./img-samsung/samsunglogo (1).png" class="logo" alt="logo"></a>
+            <div class="toggle" onclick="toggleMenu()"></div>
+            <ul class="navigation">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </header>
+
+        <!--div content-->
+        <div class="content">
+            <!--div textBx-->
+            <div class="textBx">
+                <h2>Melhores celulares aqui</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis molestiae nulla atque repudiandae
+                    ipsa quisquam sit dolores omnis nobis porro, eaque consectetur, neque magni consequuntur eius quo.</p>
+                <a href="#">saiba mais</a>
+            </div>
+            <!--fim div textBx-->
+
+            <div class="imgBox">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./img-samsung/phone1.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img-samsung/phone2.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img-samsung/phone3.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img-samsung/phone6.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img-samsung/phone5.png" alt=""></div>
+                        <div class="swiper-slide"><img src="./img-samsung/phone4.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fim div content-->
+        <ul class="sci">
+            <li><a href="#"><img src="./img/facebook.png" alt="facebook"></a></li>
+            <li><a href="#"><img src="./img/twitter.png" alt="twitter"></a></li>
+            <li><a href="#"><img src="./img/instagram.png" alt="instagram"></a></li>
+        </ul>
+    </section>
+    <!--fim section one-->
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop: true,
+        });
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>
