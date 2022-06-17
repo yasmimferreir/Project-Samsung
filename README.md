@@ -8,7 +8,7 @@
 
 
  <h2>🌟✔Resultado do projeto tela Samsung.
- <h2>🚀 Link da página: 
+ <h2>🚀 Link da página:https://yasmimferreir.github.io/Project-Samsung/
 
 <h2>🛠⚙Ajustes e melhorias
 
@@ -16,7 +16,7 @@
 
 - [x] Criação do HTML
 - [x] Criação do CSS
-- [x] Criação do JavaScript
+- [x] JavaScript
 - [x] Responsive
   
 
